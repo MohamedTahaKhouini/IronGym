@@ -59,8 +59,7 @@ def webhook():
             ],
             "resize_keyboard": True
         }
-        send_message(chat_id, "🏋️‍♂️ Welcome to IronPulse Gym!\nChoose an option below:")
-
+        send_message(chat_id, "🏋️‍♂️ Welcome to IronPulse Gym!\nChoose an option below:", reply_markup=keyboard)
 
     elif text == "📋 Membership Plans":
         msg = "<b>🏷️ Membership Plans:</b>\n\n💪 Basic - 80dt/month\n🔥 Premium - 120dt/month\n🧑‍🏫 With Trainer - 180dt/month"
@@ -77,13 +76,10 @@ def webhook():
         send_message(chat_id, "📅 Choose a time to book your session:", reply_markup=keyboard)
 
     elif text == "🕐 Opening Hours":
-        send_message(chat_id, "🕐 We are open:
-Mon-Sat: 6am - 10pm
-Sun: Closed")
+        send_message(chat_id, "🕐 We are open:\nMon-Sat: 6am - 10pm\nSun: Closed")
 
     elif text == "📞 Contact Info":
-        send_message(chat_id, "📞 Phone: +216 99 123 456
-📍 Address: 123 Fitness St, Tunis")
+        send_message(chat_id, "📞 Phone: +216 99 123 456\n📍 Address: 123 Fitness St, Tunis")
 
     else:
         send_message(chat_id, "❓ I didn’t understand that. Please use the buttons.")

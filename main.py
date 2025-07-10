@@ -59,8 +59,8 @@ def webhook():
             ],
             "resize_keyboard": True
         }
-        send_message(chat_id, "🏋️‍♂️ Welcome to IronPulse Gym!
-How can I help you today?", reply_markup=keyboard)
+        send_message(chat_id, "🏋️‍♂️ Welcome to IronPulse Gym!\nChoose an option below:")
+
 
     elif text == "📋 Membership Plans":
         msg = "<b>🏷️ Membership Plans:</b>\n\n💪 Basic - 80dt/month\n🔥 Premium - 120dt/month\n🧑‍🏫 With Trainer - 180dt/month"
